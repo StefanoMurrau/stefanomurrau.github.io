@@ -29,8 +29,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: add token
-        env: token : ${{secrets.MY_SECRET1}}
+      - name: test
+        run: echo "ciao"
+        env:
+           token: ${{secrets.MY_SECRET1}}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
