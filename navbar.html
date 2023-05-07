@@ -30,8 +30,6 @@
                 </div>
             </div>
 
-            <script type="text/javascript" src="env.js"></script> 
-
             <script>
                 /*
                 This is a JavaScript function that selects all the navigation links in the navbar
@@ -51,9 +49,14 @@
                         }
                     }) ;       
                 } ;
-                console.log("QUI" + token) ;
+
                 /*
-              
+                The `getRepoList` function is making an AJAX request to the GitHub API to retrieve a
+                list of repositories belonging to the user "stefanomurrau". It sets the
+                `Authorization` header with a bearer token and specifies the response format as
+                `application/vnd.github+json`. Once the response is received, it loops through the
+                list of repositories and appends them as links to a dropdown menu with the id
+                `repo-list`.
                 */
                 const getRepoList = () =>{
                     const token = "ghp_test" ;

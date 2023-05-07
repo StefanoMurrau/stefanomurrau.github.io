@@ -15,4 +15,4 @@ Per creare nuove pagine
 
 ## Github API
 
-Per poter ottenere la lista dei repositori dell'organizzazione corrispondente bisogna creare un token sul sito di github
+Per poter ottenere la lista dei repositori privati dell'organizzazione corrispondente bisogna creare un token sul sito di github ( ma non è possibile usarlo su una pagina hostata da github stesso, per i repo pubblici non serve un token)
